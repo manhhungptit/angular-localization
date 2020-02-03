@@ -1,0 +1,14 @@
+{
+  "name": "angular-localization",
+  "version": "1.0.0",
+  "description": "Demo project for Angularjs localization",
+  "main": "index.js",
+  "scripts": {
+    "test": "http-server -p 8000"
+  },
+  "author": "Manh Hung",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.1"
+  }
+}

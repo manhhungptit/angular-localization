@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+
+<head>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-route/angular-route.min.js"></script>
+    <script src="./bower_components/angular-translate/angular-translate.min.js"></script>
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="./app.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        <div class="container" ng-controller="mainController as ctrl">
+            <div class="row" style="margin-top: 15px;">
+                <div class="col-md-12">
+                    <h1>{{ 'HEADLINE' | translate }}</h1>
+                    <div class="form-group row">
+                        <label class="col-md-4 col-xs-12">{{ 'LABEL' | translate }}</label>
+                        <select class="form-control col-md-8 col-xs-12" ng-model="selected"
+                            ng-options="item.name for item in languages" ng-change="ctrl.changeLanguage()">
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
