@@ -6,3 +6,5 @@
 > bower install (if bower is not installed, run **npm install -g bower**)
 3. Run test:
 > npm run test
+## References
+Angular Translate module: [https://angular-translate.github.io/](https://angular-translate.github.io/)
